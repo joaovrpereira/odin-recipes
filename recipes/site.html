@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas do Odin</title>
+    <style>
+        form {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 1em;
+            position:static;   
+            display: block;
+        }
+        footer {
+            position: relative;
+            display: block;
+        }
+        div.complete{
+            padding: 1em;
+        }
+    </style>
 </head>
 <body>
     <header>RECEITAS DO ODIN</header>
@@ -33,19 +49,47 @@
             <h2>Colaboradores</h2>
             <img src="#" alt=" "><img src="#" alt=" "><img src="#" alt=" ">
         </section>
-        <article>
-           <form autocomplete="off">
+        
+        <section>
+           <div class="complete">
+            <form autocomplete="off">
                 <fieldset>
-                    <legend>Nos envie sua receita</legend>
-                    <label type="text">Nome: </label>
-                    <label type="password">email: </label>
-                    <label type="text">Receita: </label><br><textarea cols="35" rows="8"></textarea>
+                    <legend>Envie sua receita!</legend><br>
+                    <div class="inputBox">
+                        <label for="text">Nome </label>
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email </label>
+                        <input type="email" name="email" id="email" class="inputUser" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="text">Telefone </label>
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        
+                    </div>
+
+                    <p>Nível de Dificuldade</p>
+                    <input type="radio" id="facil" value="Fácil" name="nivel">
+                    <label for="facil">Fácil</label>
+                    <input type="radio" id="medio" value="Médio" name="nivel">
+                    <label for="medio">Médio</label>
+                    <input type="radio" id="dificil" value="Difícil" name="nivel">
+                    <label for="dificil">Difícil</label><br>
+                    
+                    <label for="text">Receita: </label><br>
+                    <textarea cols="35" rows="8"></textarea><br>
                     <input type="submit" value="Enviar Receita">
                 </fieldset>
            </form>
-        </article>
+           </div>
+        </section>
+        
         
  
     </main>
+    <footer><p>Receitas do Odin&#8482; - João Vitor Pereira de Bortoli&#8480;</p></footer>
 </body>
 </html>
