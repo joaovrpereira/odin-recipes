@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas do Odin</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        
+        
         form {
             background-color: aquamarine;
             text-align: center;
@@ -24,21 +32,35 @@
             list-style-type: none;
             display: inline-block;
         }
-        
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1.5em;
+        }
+        nav ul{
+            display: flex;
+           gap: 32px;
+        }
     </style>
 </head>
 <body>
-    <header>RECEITAS DO ODIN</header>
-    <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">RECEITAS DO MOMENTO</a></li>
-            <li><a href="#">CARNES</a></li>
-            <li><a href="#">ITALIA</a></li>
-            <li><a href="#">FRANÇA</a></li>
-            <li><a href="#">FALE CONOSCO</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>RECEITAS DO ODIN</h1>
+        <img src="" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">RECEITAS DO MOMENTO</a></li>
+                <li><a href="#">CARNES</a></li>
+                <li><a href="#">ITALIA</a></li>
+                <li><a href="#">FRANÇA</a></li>
+                <li><a href="#">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main>
         <section>
             <h2>HOME</h2>
